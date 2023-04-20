@@ -9,7 +9,9 @@ const httpStatus = require("http-status-codes");
 exports.pageNotFoundError = (req, res) => {
     let errorCode = httpStatus.NOT_FOUND;
     res.status(errorCode);
-    res.render("error"); // error 페이지를 나타냄 
+    res.render("error", {
+        code : errorCode
+    }); // error 페이지를 나타냄 
 
 };
 
