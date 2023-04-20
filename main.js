@@ -35,6 +35,7 @@ app.use(express.json());
 
 // 뷰 엔진을 ejs로 설정 
 app.set("view engine", "ejs");
+
 // layout.ejs 내용이 기본 템플릿이 된다.(웹사이트의 기본 형태)
 app.use(layouts);
 
